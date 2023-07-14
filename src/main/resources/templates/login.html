@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+  <div class="container">
+   <div>
+  <img alt="image" src="/images/LearnQuest_logo.jpg">
+  </div>
+    <h1 style="color: green; padding-right: 60%">LearnQuest</h1>
+    <p>Sign in with your organizational account</p>
+    <form action="/valid-data" method="post">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit" onclick=myFunction()>
+        
+        <script>
+function myFunction() {
+  alert("Login Successful!");
+  textBox.value = "";
+}
+</script>
+      </div>
+    </form>
+    <div class="bottom-links">
+      <a href="#" class="forgot-password">Forgot Password?</a>
+      <a href="index.html" class="back-button" style="background-color: black">Home</a>
+    </div>
+  </div>
+ <div class="copyrights">
+ <p>@2023 learnQuest</p>
+ </div>
+</body>
+</html>

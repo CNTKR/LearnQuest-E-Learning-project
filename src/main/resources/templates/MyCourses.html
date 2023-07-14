@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <title>Mycourses Page</title>
+   
+    <link rel="stylesheet" th:href="@{/css/MyCourses.css}"/>
+  <style>
+     table, th, td {
+       border: 1px solid white;
+     }
+   </style>
+  </head>
+    <body class="body">
+    <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Price</th>
+        <th>Course Mentor</th>
+        <th>Last Updated</th>
+        <th>Course Language</th>
+      </tr>
+      </thead>
+        <tr th:each="all:${alllist}" >
+        <td th:text="${all.courseID}" ></td>
+        <td  th:text="${all.courseName}"></td>
+        <td  th:text="${all.coursePrice}"></td>
+         <td  th:text="${all.courseMentor}"></td>
+        <td  th:text="${all.Lastupdated}"></td>
+        <td  th:text="${all.Language}"></td>
+        <td><a href="/viewlessons-page"><button>START LEARNING</button></a></td>
+      </tr>
+    </table>
+ 
+  	
+  </body>
+  </html>

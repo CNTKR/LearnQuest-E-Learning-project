@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/css/Viewlessons.css}"/>
+    <title>Lessons Page</title>
+</head>
+<body>
+    <h1>Lessons Page</h1>
+    <form method="post" action="/getbyid-lessons">
+        <label for="lesson_id">Lesson ID:</label>
+        <input type="text" id="lesson_id" name="lessonID"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

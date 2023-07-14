@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <title>Buycourse Page</title>
+    <link rel="stylesheet" th:href="@{/css/BuyCourse.css}"/>
+   <style>
+     table, th, td {
+       border: 1px solid black;
+     }
+   </style>
+  </head>
+  <body class="body">
+    <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Price</th>
+        <th>Course Mentor</th>
+        <th>Last Updated</th>
+        <th>Course Language</th>
+      </tr>
+      </thead>
+        <tr th:each="lis:${list}" >
+        <td th:text="${lis.courseID}" ></td>
+        <td  th:text="${lis.courseName}"></td>
+        <td  th:text="${lis.coursePrice}"></td>
+         <td  th:text="${lis.courseMentor}"></td>
+        <td  th:text="${lis.Lastupdated}"></td>
+        <td  th:text="${lis.Language}"></td>
+        <td><a href=""><button>BUY</button></a></td>
+      </tr>
+    </table>
+  </body>
+</html>

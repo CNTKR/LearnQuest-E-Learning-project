@@ -1,0 +1,79 @@
+/* login.css */
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+ 
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Form Styles */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+   color: maroon;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+/* Bottom Links */
+
+.bottom-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-password,
+.back-button {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  background-color: yellow;
+}
+
+.forgot-password:hover,
+.back-button:hover {
+  color: maroon;
+}
+.copyrights{
+	text-align: center;
+	
+}
+
